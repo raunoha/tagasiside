@@ -6,7 +6,7 @@ const [andjad, uuendaAndjad] = useState(andjateFail);
 const andjadRef= useRef();
 
 const filtreeriMTaht = () => {
-    const vastus = andjad.filter(e =>  e[0] === "M");
+    const vastus = andjad.filter(e =>  e[0] === "M"); //startWith("M)")
     uuendaAndjad(vastus)
   }
   /* const filtreeriM = () => {
@@ -23,7 +23,7 @@ const filtreeriL6ppYga = () => {
 
 
 const sorteeriZA = () => {
-    andjad.sort((b,a) => a.localeCompare(b));
+    andjad.sort((b,a) => a.localeCompare(b)); // andjad.sort andjad.reverse
 uuendaAndjad(andjad.slice())
 }
 const EST = () => {
